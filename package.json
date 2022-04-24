@@ -23,6 +23,7 @@
     "LICENSE"
   ],
   "scripts": {
+    "serve": "npx http-server dist",
     "prebuild": "rimraf dist",
     "build": "tsc -p .",
     "lint:eslint": "eslint --ext \".js,.ts\" --ignore-path .gitignore . --fix",
