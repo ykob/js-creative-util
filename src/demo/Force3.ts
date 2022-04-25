@@ -1,4 +1,4 @@
-type Vector3 = [number, number, number]
+import { Vector3 } from '../models'
 
 class Force3 {
   acceleration: Vector3 = [0, 0, 0]
