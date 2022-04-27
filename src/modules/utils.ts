@@ -14,7 +14,7 @@ const mult = (v: Vector3, l: number): Vector3 => {
 
 const normalize = (v: Vector3): Vector3 => {
   const l = mag(v)
-  return [v[0] / l, v[1] / l, v[2] / l]
+  return l === 0 ? [0, 0, 0] : [v[0] / l, v[1] / l, v[2] / l]
 }
 
 const sub = (v1: Vector3, v2: Vector3): Vector3 => {
