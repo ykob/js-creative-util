@@ -1,6 +1,6 @@
-import attract from './modules/attract'
-import drag from './modules/drag'
-import friction from './modules/friction'
-import hook from './modules/hook'
+import attract from './modules/attract.js'
+import drag from './modules/drag.js'
+import friction from './modules/friction.js'
+import Hook from './modules/Hook.js'
 
-export { attract, drag, friction, hook }
+export { attract, drag, friction, Hook }
