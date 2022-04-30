@@ -1,5 +1,5 @@
 import Force3 from './Force3.js'
-import { attract, drag, Hook } from '../index.js'
+import { drag, Hook } from '../index.js'
 import { Vector3 } from '../models/index.js'
 
 const DRAG_C = 0.2
@@ -31,8 +31,10 @@ const update = () => {
   force3b.applyForce(hookForce2)
   force3b.applyForce(drag(force3b.acceleration, DRAG_C))
   force3b.updateVelocity()
-  elmCircle1!.style.transform = `translate3d(${force3a.velocity[0]}px, ${force3a.velocity[1]}px, ${force3a.velocity[2]}px)`
-  elmCircle2!.style.transform = `translate3d(${force3b.velocity[0]}px, ${force3b.velocity[1]}px, ${force3b.velocity[2]}px)`
+  if (elmCircle1)
+    elmCircle1.style.transform = `translate3d(${force3a.velocity[0]}px, ${force3a.velocity[1]}px, ${force3a.velocity[2]}px)`
+  if (elmCircle2)
+    elmCircle2.style.transform = `translate3d(${force3b.velocity[0]}px, ${force3b.velocity[1]}px, ${force3b.velocity[2]}px)`
   requestAnimationFrame(update)
 }
 const start = () => {
