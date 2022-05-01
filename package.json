@@ -19,24 +19,31 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/",
+    "dist/modules/",
+    "dist/*.(ts,js,map)",
     "LICENSE"
   ],
   "scripts": {
-    "prebuild": "rimraf dist",
     "build": "tsc -p .",
+    "clean": "rimraf dist",
+    "copy": "cpx static/** dist",
     "lint:eslint": "eslint --ext \".js,.ts\" --ignore-path .gitignore . --fix",
     "lint:prettier": "prettier --write src/**/*",
     "lint": "npm run lint:prettier && npm run lint:eslint",
-    "prepare": "npm run build"
+    "prebuild": "npm run clean",
+    "prepare": "npm run build",
+    "serve": "npm run build && npm run copy && npx http-server dist"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
+    "cpx": "^1.5.0",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
+    "http-server": "^14.1.0",
     "prettier": "2.5.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.6.2"
   },
   "keywords": [
