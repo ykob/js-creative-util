@@ -22,6 +22,8 @@ WIP
 
 ### Model
 
+It defined the below type for TypeScript.
+
 ```
 type Vector3 = [number, number, number]
 ```
@@ -32,9 +34,17 @@ type Vector3 = [number, number, number]
 
 #### `drag(acceleration: Vector3, c: number): Vector3`
 
+The drag function returns a number array of Vector3 for decelerating an object.  
+This returned value is according to the magnitude of an object's acceleration.
+
 #### `friction(acceleration: Vector3, c: number): Vector3`
 
+The friction function returns a number array of Vector3 for decelerating an object.  
+This returned value is constant.
+
 #### `Hook(k: number, restLength: number)`
+
+The Hook class calculates the acceleration with Hooke's law.
 
 ```
 const hook = new Hook(0.1, 50)
