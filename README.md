@@ -18,8 +18,6 @@ yarn add @ykob/js-creative-util
 
 ## Usage
 
-WIP
-
 ### Model
 
 It defined the below type for TypeScript.
@@ -31,6 +29,8 @@ type Vector3 = [number, number, number]
 ### Functions / Class
 
 #### `attract(vSelf: Vector3, mSelf: number, vTarget: Vector3, mTarget: number, distMin: number, distMax: number): Vector3`
+
+The attract function returns the acceleration to attract between `vSelf` object and `vTarget` object.
 
 #### `drag(acceleration: Vector3, c: number): Vector3`
 
