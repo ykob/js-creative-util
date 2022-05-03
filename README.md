@@ -50,6 +50,10 @@ The Hook class calculates the acceleration with Hooke's law.
 const hook = new Hook(0.1, 50)
 ```
 
+## Reference
+
+- [The Nature of Code](https://natureofcode.com/)
+
 ## License
 
 Copyright (c) 2022 Yoichi Kobayashi  
