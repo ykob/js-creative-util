@@ -19,8 +19,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/modules/",
-    "dist/*.(ts,js,map)",
+    "dist/",
     "LICENSE"
   ],
   "scripts": {
