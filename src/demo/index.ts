@@ -1,6 +1,5 @@
-import Force3 from './Force3.js'
-import { drag, Hook } from '../index.js'
-import { Vector3 } from '../models/'
+import Force3 from './Force3'
+import { drag, Hook, Vector3 } from '../'
 
 const DRAG_C = 0.2
 const HOOK_K = 0.05

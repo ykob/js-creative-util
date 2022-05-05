@@ -1,4 +1,4 @@
-import { Vector3 } from '../models'
+import { Vector3 } from '../'
 
 class Force3 {
   acceleration: Vector3 = [0, 0, 0]

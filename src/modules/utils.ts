@@ -1,4 +1,4 @@
-import { Vector3 } from '../models'
+import { Vector3 } from '../'
 
 const add = (v1: Vector3, v2: Vector3): Vector3 => {
   return [v1[0] + v2[0], v1[1] + v2[1], v1[2] + v2[2]]

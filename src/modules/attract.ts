@@ -1,5 +1,5 @@
-import { Vector3 } from '../models'
-import { mag, mult, normalize, sub } from './utils.js'
+import { Vector3 } from '../'
+import { mag, mult, normalize, sub } from './utils'
 
 const attract = (
   vSelf: Vector3,
