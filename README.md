@@ -50,6 +50,14 @@ The Hook class calculates the acceleration with Hooke's law.
 const hook = new Hook(0.1, 50)
 ```
 
+##### `update(velocity: Vector3): Vector3`
+
+Return the acceleration that calculates with Hooke's law.
+
+##### `setAnchor(anchor: Vector3): void`
+
+Set the anchor position.
+
 ## Reference
 
 - [The Nature of Code](https://natureofcode.com/)
