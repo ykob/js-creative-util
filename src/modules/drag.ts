@@ -1,5 +1,5 @@
-import { Vector3 } from '../models'
-import { mag, mult, normalize } from './utils.js'
+import { Vector3 } from '../'
+import { mag, mult, normalize } from './utils'
 
 const drag = (acceleration: Vector3, c: number): Vector3 => {
   const length = c * mag(acceleration)

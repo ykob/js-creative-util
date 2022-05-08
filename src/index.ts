@@ -1,6 +1,8 @@
-import attract from './modules/attract.js'
-import drag from './modules/drag.js'
-import friction from './modules/friction.js'
-import Hook from './modules/Hook.js'
+import attract from './modules/attract'
+import drag from './modules/drag'
+import friction from './modules/friction'
+import Hook from './modules/Hook'
 
-export { attract, drag, friction, Hook }
+declare type Vector3 = [number, number, number]
+
+export { attract, drag, friction, Hook, Vector3 }

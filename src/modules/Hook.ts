@@ -1,5 +1,5 @@
-import { Vector3 } from '../models'
-import { mag, mult, normalize, sub } from './utils.js'
+import { Vector3 } from '../'
+import { mag, mult, normalize, sub } from './utils'
 
 class Hook {
   anchor: Vector3 = [0, 0, 0]
